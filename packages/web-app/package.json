@@ -8,8 +8,7 @@
     "export": "next export",
     "start": "next start",
     "format": "next lint --fix",
-    "prettier": "prettier './src' --write",
-    "prepare": "wagmi generate"
+    "prettier": "prettier './src' --write"
   },
   "lint-staged": {
     "./src": [
