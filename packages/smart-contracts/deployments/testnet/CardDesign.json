@@ -1,0 +1,497 @@
+{
+  "address": "0xbA8B29723E1123CC5F48F0F933BE1D4C98e0D78E",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "Unauthorized",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "ownerCandidate",
+          "type": "address"
+        }
+      ],
+      "name": "OwnerUpdateInitiated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "confirmOwner",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "erc721KActivatorInstance",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getColor",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "colorId",
+          "type": "uint8"
+        }
+      ],
+      "name": "getColorFromMap",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getEmoji",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "emojiId",
+          "type": "uint8"
+        }
+      ],
+      "name": "getEmojiFromMap",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwner",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "color",
+          "type": "uint8"
+        }
+      ],
+      "name": "setColor",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "color",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8",
+          "name": "emoji",
+          "type": "uint8"
+        }
+      ],
+      "name": "setDuringMint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_erc721KActivatorInstance",
+          "type": "address"
+        }
+      ],
+      "name": "setERC721KActivatorInstance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "emoji",
+          "type": "uint8"
+        }
+      ],
+      "name": "setEmoji",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_styleUpgradeCost",
+          "type": "uint256"
+        }
+      ],
+      "name": "setStyleUpgradeCost",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x73048c117b03a31f915b8568c345b7f324047743d8c563f04f2a7600924406b7",
+  "receipt": {
+    "to": null,
+    "from": "0x8C46e53dC60EC32e8DD67Fb11f076fF3EcDc5211",
+    "contractAddress": "0xbA8B29723E1123CC5F48F0F933BE1D4C98e0D78E",
+    "transactionIndex": 31,
+    "gasUsed": "1884954",
+    "logsBloom": "0x000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000002000000000000000000000001a0000000000000000000800004000000000000000000000040000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000800000000",
+    "blockHash": "0xa74d974b7a795e6970e1543a2bd53c73842cfeffdc9cf74c1e8c35c82c79d613",
+    "transactionHash": "0x73048c117b03a31f915b8568c345b7f324047743d8c563f04f2a7600924406b7",
+    "logs": [
+      {
+        "transactionIndex": 31,
+        "blockNumber": 3472116,
+        "transactionHash": "0x73048c117b03a31f915b8568c345b7f324047743d8c563f04f2a7600924406b7",
+        "address": "0xbA8B29723E1123CC5F48F0F933BE1D4C98e0D78E",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x0000000000000000000000008c46e53dc60ec32e8dd67fb11f076ff3ecdc5211"
+        ],
+        "data": "0x",
+        "logIndex": 43,
+        "blockHash": "0xa74d974b7a795e6970e1543a2bd53c73842cfeffdc9cf74c1e8c35c82c79d613"
+      }
+    ],
+    "blockNumber": 3472116,
+    "cumulativeGasUsed": "5781020",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x8C46e53dC60EC32e8DD67Fb11f076fF3EcDc5211"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "404f5463dd6ebc8ff1a6e382af5684f3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"Unauthorized\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"ownerCandidate\",\"type\":\"address\"}],\"name\":\"OwnerUpdateInitiated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"confirmOwner\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"erc721KActivatorInstance\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getColor\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"colorId\",\"type\":\"uint8\"}],\"name\":\"getColorFromMap\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getEmoji\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"emojiId\",\"type\":\"uint8\"}],\"name\":\"getEmojiFromMap\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwner\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"color\",\"type\":\"uint8\"}],\"name\":\"setColor\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"color\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"emoji\",\"type\":\"uint8\"}],\"name\":\"setDuringMint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_erc721KActivatorInstance\",\"type\":\"address\"}],\"name\":\"setERC721KActivatorInstance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"emoji\",\"type\":\"uint8\"}],\"name\":\"setEmoji\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_styleUpgradeCost\",\"type\":\"uint256\"}],\"name\":\"setStyleUpgradeCost\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"transferOwnership(address)\":{\"params\":{\"newOwner\":\"The `_ownerCandidate` that will `confirmOwner()`.\"}}},\"version\":1},\"userdoc\":{\"errors\":{\"Unauthorized()\":[{\"notice\":\"----------------------------------------------------------------------- Custom Errors -----------------------------------------------------------------------\"}]},\"events\":{\"OwnerUpdateInitiated(address,address)\":{\"notice\":\"----------------------------------------------------------------------- Events -----------------------------------------------------------------------\"}},\"kind\":\"user\",\"methods\":{\"confirmOwner()\":{\"notice\":\"Confirm ownership between `owner` and `_ownerCandidate`.\"},\"owner()\":{\"notice\":\"----------------------------------------------------------------------- Ownership Storage -----------------------------------------------------------------------\"},\"renounceOwner()\":{\"notice\":\"Terminate ownership by `owner`.\"},\"transferOwnership(address)\":{\"notice\":\"Initiate ownership transfer.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/CardDesign.sol\":\"CardDesign\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/CardDesign.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.15;\\n\\nimport { ERC721 } from \\\"./Solbase/ERC721.sol\\\";\\nimport { OwnedThreeStep } from \\\"./Solbase/OwnedThreeStep.sol\\\";\\n\\ncontract CardDesign is OwnedThreeStep {\\n  address public erc721KActivatorInstance;\\n\\n  uint256 private STYLE_UPGRADE_VALUE = 0.01 ether;\\n\\n  mapping(uint256 => uint8) private _color;\\n  mapping(uint256 => uint8) private _emoji;\\n\\n  mapping(uint8 => bytes) private _colorMap;\\n  mapping(uint8 => string) private _emojiMap;\\n\\n  mapping(address => bool) private _supporter;\\n\\n  /* ===================================================================================== */\\n  /* Constructor & Modifiers                                                               */\\n  /* ===================================================================================== */\\n\\n  constructor(address _owner) OwnedThreeStep(_owner) {\\n    _colorMap[0] = hex\\\"6236C5\\\"; // Purple\\n    _colorMap[1] = hex\\\"224396\\\"; // Blue\\n    _colorMap[2] = hex\\\"922B2B\\\"; // Red\\n    _colorMap[3] = hex\\\"498933\\\"; // Green\\n    _colorMap[4] = hex\\\"313131\\\"; // Black\\n\\n    _emojiMap[0] = unicode\\\"\\ud83c\\udfe6\\\";\\n    _emojiMap[1] = unicode\\\"\\ud83e\\udd9c\\\";\\n    _emojiMap[2] = unicode\\\"\\ud83e\\udd8a\\\";\\n    _emojiMap[3] = unicode\\\"\\ud83e\\udd84\\\";\\n    _emojiMap[4] = unicode\\\"\\ud83d\\udc19\\\";\\n    _emojiMap[5] = unicode\\\"\\ud83d\\udc35\\\";\\n    _emojiMap[6] = unicode\\\"\\ud83d\\udc33\\\";\\n    _emojiMap[7] = unicode\\\"\\ud83d\\udc1d\\\";\\n    _emojiMap[8] = unicode\\\"\\ud83d\\udc3a\\\";\\n    _emojiMap[9] = unicode\\\"\\ud83d\\udc51\\\";\\n    _emojiMap[10] = unicode\\\"\\ud83d\\ude80\\\";\\n    _emojiMap[11] = unicode\\\"\\ud83c\\udf08\\\";\\n    _emojiMap[12] = unicode\\\"\\ud83e\\udeb6\\\";\\n    _emojiMap[13] = unicode\\\"\\ud83e\\uddf8\\\";\\n    _emojiMap[14] = unicode\\\"\\ud83c\\udf81\\\";\\n    _emojiMap[15] = unicode\\\"\\ud83d\\udc8c\\\";\\n    _emojiMap[16] = unicode\\\"\\ud83c\\udf80\\\";\\n    _emojiMap[17] = unicode\\\"\\ud83d\\udd2e\\\";\\n    _emojiMap[18] = unicode\\\"\\ud83d\\udc8e\\\";\\n    _emojiMap[19] = unicode\\\"\\ud83e\\ude85\\\";\\n    _emojiMap[20] = unicode\\\"\\ud83c\\udfd7\\\";\\n    _emojiMap[21] = unicode\\\"\\ud83e\\uddf0\\\";\\n    _emojiMap[22] = unicode\\\"\\ud83e\\uddf2\\\";\\n    _emojiMap[23] = unicode\\\"\\ud83e\\uddea\\\";\\n    _emojiMap[24] = unicode\\\"\\ud83d\\udee1\\ufe0f\\\";\\n    _emojiMap[25] = unicode\\\"\\ud83e\\uddec\\\";\\n    _emojiMap[26] = unicode\\\"\\ud83e\\udded\\\";\\n    _emojiMap[27] = unicode\\\"\\ud83e\\uddee\\\";\\n    _emojiMap[28] = unicode\\\"\\u2694\\ufe0f\\\";\\n    _emojiMap[29] = unicode\\\"\\ud83e\\uddf0\\\";\\n    _emojiMap[30] = unicode\\\"\\ud83e\\uddf1\\\";\\n    _emojiMap[31] = unicode\\\"\\u26d3\\ufe0f\\\";\\n    _emojiMap[32] = unicode\\\"\\ud83c\\udfc8\\\";\\n    _emojiMap[33] = unicode\\\"\\ud83c\\udfc0\\\";\\n    _emojiMap[34] = unicode\\\"\\u26bd\\ufe0f\\\";\\n    _emojiMap[35] = unicode\\\"\\ud83c\\udfd0\\\";\\n    _emojiMap[36] = unicode\\\"\\ud83c\\udfd3\\\";\\n    _emojiMap[37] = unicode\\\"\\ud83c\\udfbe\\\";\\n    _emojiMap[38] = unicode\\\"\\ud83c\\udfb2\\\";\\n    _emojiMap[39] = unicode\\\"\\ud83c\\udfc9\\\";\\n    _emojiMap[40] = unicode\\\"\\ud83c\\udfbd\\\";\\n    _emojiMap[41] = unicode\\\"\\ud83c\\udfc6\\\";\\n    _emojiMap[42] = unicode\\\"\\ud83c\\udfaf\\\";\\n  }\\n\\n  /* ===================================================================================== */\\n  /* External Functions                                                                    */\\n  /* ===================================================================================== */\\n\\n  function getEmoji(uint256 tokenId) external view returns (string memory) {\\n    return _emojiMap[_emoji[tokenId]];\\n  }\\n\\n  function getColor(uint256 tokenId) external view returns (bytes memory) {\\n    return _colorMap[_color[tokenId]];\\n  }\\n\\n  function getEmojiFromMap(uint8 emojiId) external view returns (string memory) {\\n    return _emojiMap[emojiId];\\n  }\\n\\n  function getColorFromMap(uint8 colorId) external view returns (bytes memory) {\\n    return _colorMap[colorId];\\n  }\\n\\n  function setDuringMint(\\n    uint256 tokenId,\\n    uint8 color,\\n    uint8 emoji\\n  ) external {\\n    require(msg.sender == erc721KActivatorInstance, \\\"Web3CardDesign:not-authorized\\\");\\n    _color[tokenId] = color;\\n    _emoji[tokenId] = emoji;\\n  }\\n\\n  function setEmoji(uint256 tokenId, uint8 emoji) external payable {\\n    require(msg.value >= STYLE_UPGRADE_VALUE, \\\"Web3CardDesign:insufficient-eth\\\");\\n    require(\\n      msg.sender == ERC721(erc721KActivatorInstance).ownerOf(tokenId),\\n      \\\"Web3CardDesign:not-owner\\\"\\n    );\\n    _emoji[tokenId] = emoji;\\n    _call(msg.value);\\n  }\\n\\n  function setColor(uint256 tokenId, uint8 color) external payable {\\n    require(msg.value >= STYLE_UPGRADE_VALUE, \\\"Web3CardDesign:insufficient-eth\\\");\\n    require(\\n      msg.sender == ERC721(erc721KActivatorInstance).ownerOf(tokenId),\\n      \\\"Web3CardDesign:not-owner\\\"\\n    );\\n    _color[tokenId] = color;\\n    _call(msg.value);\\n  }\\n\\n  function setERC721KActivatorInstance(address _erc721KActivatorInstance) external onlyOwner {\\n    erc721KActivatorInstance = _erc721KActivatorInstance;\\n  }\\n\\n  function setStyleUpgradeCost(uint256 _styleUpgradeCost) external onlyOwner {\\n    STYLE_UPGRADE_VALUE = _styleUpgradeCost;\\n  }\\n\\n  function _call(uint256 value) internal {\\n    (bool _success, ) = erc721KActivatorInstance.call{ value: value }(\\\"\\\");\\n    require(_success, \\\"Web3CardDesign:call-failed\\\");\\n  }\\n}\\n\",\"keccak256\":\"0xf9a53f29eac90595e1223f5cb7770bdf98ff88815d32aa4112d61dfa201be33a\",\"license\":\"MIT\"},\"contracts/Solbase/ERC721.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.15;\\n\\n/// @notice Modern, minimalist, and gas-optimized ERC721 implementation.\\n/// @author SolDAO (https://github.com/Sol-DAO/Solbase/blob/main/src/tokens/ERC721.sol)\\n/// @author Modified from Solmate (https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC721.sol)\\nabstract contract ERC721 {\\n    /// -----------------------------------------------------------------------\\n    /// Events\\n    /// -----------------------------------------------------------------------\\n\\n    event Transfer(address indexed from, address indexed to, uint256 indexed id);\\n\\n    event Approval(address indexed owner, address indexed spender, uint256 indexed id);\\n\\n    event ApprovalForAll(address indexed owner, address indexed operator, bool approved);\\n\\n    /// -----------------------------------------------------------------------\\n    /// Custom Errors\\n    /// -----------------------------------------------------------------------\\n\\n    error NotMinted();\\n\\n    error ZeroAddress();\\n\\n    error NotApproved();\\n\\n    error WrongFrom();\\n\\n    error InvalidRecipient();\\n\\n    error UnsafeRecipient();\\n\\n    error AlreadyMinted();\\n\\n    /// -----------------------------------------------------------------------\\n    /// Metadata Storage/Logic\\n    /// -----------------------------------------------------------------------\\n\\n    string public name;\\n\\n    string public symbol;\\n\\n    function tokenURI(uint256 id) public view virtual returns (string memory);\\n\\n    /// -----------------------------------------------------------------------\\n    /// ERC721 Balance/Owner Storage\\n    /// -----------------------------------------------------------------------\\n\\n    mapping(uint256 => address) internal _ownerOf;\\n\\n    mapping(address => uint256) internal _balanceOf;\\n\\n    function ownerOf(uint256 id) public view virtual returns (address owner) {\\n        if ((owner = _ownerOf[id]) == address(0)) revert NotMinted();\\n    }\\n\\n    function balanceOf(address owner) public view virtual returns (uint256) {\\n        if (owner == address(0)) revert ZeroAddress();\\n        return _balanceOf[owner];\\n    }\\n\\n    /// -----------------------------------------------------------------------\\n    /// ERC721 Approval Storage\\n    /// -----------------------------------------------------------------------\\n\\n    mapping(uint256 => address) public getApproved;\\n\\n    mapping(address => mapping(address => bool)) public isApprovedForAll;\\n\\n    /// -----------------------------------------------------------------------\\n    /// Constructor\\n    /// -----------------------------------------------------------------------\\n\\n    constructor(string memory _name, string memory _symbol) {\\n        name = _name;\\n        symbol = _symbol;\\n    }\\n\\n    /// -----------------------------------------------------------------------\\n    /// ERC721 Logic\\n    /// -----------------------------------------------------------------------\\n\\n    function approve(address spender, uint256 id) public virtual {\\n        address owner = _ownerOf[id];\\n\\n        if (msg.sender != owner && !isApprovedForAll[owner][msg.sender]) revert NotApproved();\\n\\n        getApproved[id] = spender;\\n\\n        emit Approval(owner, spender, id);\\n    }\\n\\n    function setApprovalForAll(address operator, bool approved) public virtual {\\n        isApprovedForAll[msg.sender][operator] = approved;\\n\\n        emit ApprovalForAll(msg.sender, operator, approved);\\n    }\\n\\n    function transferFrom(address from, address to, uint256 id) public virtual {\\n        if (from != _ownerOf[id]) revert WrongFrom();\\n\\n        if (to == address(0)) revert InvalidRecipient();\\n\\n        if (msg.sender != from && !isApprovedForAll[from][msg.sender] && msg.sender != getApproved[id])\\n            revert NotApproved();\\n\\n        // Underflow of the sender's balance is impossible because we check for\\n        // ownership above and the recipient's balance can't realistically overflow.\\n        unchecked {\\n            _balanceOf[from]--;\\n\\n            _balanceOf[to]++;\\n        }\\n\\n        _ownerOf[id] = to;\\n\\n        delete getApproved[id];\\n\\n        emit Transfer(from, to, id);\\n    }\\n\\n    function safeTransferFrom(address from, address to, uint256 id) public virtual {\\n        transferFrom(from, to, id);\\n\\n        if (to.code.length != 0) {\\n            if (\\n                ERC721TokenReceiver(to).onERC721Received(msg.sender, from, id, \\\"\\\") !=\\n                ERC721TokenReceiver.onERC721Received.selector\\n            ) revert UnsafeRecipient();\\n        }\\n    }\\n\\n    function safeTransferFrom(address from, address to, uint256 id, bytes calldata data) public virtual {\\n        transferFrom(from, to, id);\\n\\n        if (to.code.length != 0) {\\n            if (\\n                ERC721TokenReceiver(to).onERC721Received(msg.sender, from, id, data) !=\\n                ERC721TokenReceiver.onERC721Received.selector\\n            ) revert UnsafeRecipient();\\n        }\\n    }\\n\\n    /// -----------------------------------------------------------------------\\n    /// ERC165 Logic\\n    /// -----------------------------------------------------------------------\\n\\n    function supportsInterface(bytes4 interfaceId) public view virtual returns (bool) {\\n        return\\n            interfaceId == 0x01ffc9a7 || // ERC165 Interface ID for ERC165\\n            interfaceId == 0x80ac58cd || // ERC165 Interface ID for ERC721\\n            interfaceId == 0x5b5e139f; // ERC165 Interface ID for ERC721Metadata\\n    }\\n\\n    /// -----------------------------------------------------------------------\\n    /// Internal Mint/Burn Logic\\n    /// -----------------------------------------------------------------------\\n\\n    function _mint(address to, uint256 id) internal virtual {\\n        if (to == address(0)) revert InvalidRecipient();\\n\\n        if (_ownerOf[id] != address(0)) revert AlreadyMinted();\\n\\n        // Counter overflow is incredibly unrealistic.\\n        unchecked {\\n            _balanceOf[to]++;\\n        }\\n\\n        _ownerOf[id] = to;\\n\\n        emit Transfer(address(0), to, id);\\n    }\\n\\n    function _burn(uint256 id) internal virtual {\\n        address owner = _ownerOf[id];\\n\\n        if (owner == address(0)) revert NotMinted();\\n\\n        // Ownership check above ensures no underflow.\\n        unchecked {\\n            _balanceOf[owner]--;\\n        }\\n\\n        delete _ownerOf[id];\\n\\n        delete getApproved[id];\\n\\n        emit Transfer(owner, address(0), id);\\n    }\\n\\n    /// -----------------------------------------------------------------------\\n    /// Internal Safe Mint Logic\\n    /// -----------------------------------------------------------------------\\n\\n    function _safeMint(address to, uint256 id) internal virtual {\\n        _mint(to, id);\\n\\n        if (to.code.length != 0) {\\n            if (\\n                ERC721TokenReceiver(to).onERC721Received(msg.sender, address(0), id, \\\"\\\") !=\\n                ERC721TokenReceiver.onERC721Received.selector\\n            ) revert UnsafeRecipient();\\n        }\\n    }\\n\\n    function _safeMint(address to, uint256 id, bytes memory data) internal virtual {\\n        _mint(to, id);\\n\\n        if (to.code.length != 0) {\\n            if (\\n                ERC721TokenReceiver(to).onERC721Received(msg.sender, address(0), id, data) !=\\n                ERC721TokenReceiver.onERC721Received.selector\\n            ) revert UnsafeRecipient();\\n        }\\n    }\\n}\\n\\n/// @notice A generic interface for a contract which properly accepts ERC721 tokens.\\n/// @author SolDAO (https://github.com/Sol-DAO/Solbase/blob/main/src/tokens/ERC721.sol)\\n/// @author Modified from Solmate (https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC721.sol)\\nabstract contract ERC721TokenReceiver {\\n    function onERC721Received(address, address, uint256, bytes calldata) external virtual returns (bytes4) {\\n        return ERC721TokenReceiver.onERC721Received.selector;\\n    }\\n}\\n\",\"keccak256\":\"0xbfadbb1f311150496bd23053a8ed410a69bef6804dcb0aef28ba61c10824b77e\",\"license\":\"MIT\"},\"contracts/Solbase/OwnedThreeStep.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.4;\\n\\n/// @notice Three-step single owner authorization mixin.\\n/// @author SolBase (https://github.com/Sol-DAO/Solbase/blob/main/src/auth/OwnedThreeStep.sol)\\n/// @author Modified from Solmate (https://github.com/transmissions11/solmate/blob/main/src/auth/Owned.sol)\\nabstract contract OwnedThreeStep {\\n    /// -----------------------------------------------------------------------\\n    /// Events\\n    /// -----------------------------------------------------------------------\\n\\n    event OwnerUpdateInitiated(address indexed user, address indexed ownerCandidate);\\n\\n    event OwnershipTransferred(address indexed user, address indexed newOwner);\\n\\n    /// -----------------------------------------------------------------------\\n    /// Custom Errors\\n    /// -----------------------------------------------------------------------\\n\\n    error Unauthorized();\\n\\n    /// -----------------------------------------------------------------------\\n    /// Ownership Storage\\n    /// -----------------------------------------------------------------------\\n\\n    address public owner;\\n\\n    address internal _ownerCandidate;\\n\\n    bool internal _ownerCandidateConfirmed;\\n\\n    modifier onlyOwner() virtual {\\n        if (msg.sender != owner) revert Unauthorized();\\n\\n        _;\\n    }\\n\\n    /// -----------------------------------------------------------------------\\n    /// Constructor\\n    /// -----------------------------------------------------------------------\\n\\n    /// @notice Create contract and set `owner`.\\n    /// @param _owner The `owner` of contract.\\n    constructor(address _owner) {\\n        owner = _owner;\\n\\n        emit OwnershipTransferred(address(0), _owner);\\n    }\\n\\n    /// -----------------------------------------------------------------------\\n    /// Ownership Logic\\n    /// -----------------------------------------------------------------------\\n\\n    /// @notice Initiate ownership transfer.\\n    /// @param newOwner The `_ownerCandidate` that will `confirmOwner()`.\\n    function transferOwnership(address newOwner) public payable virtual onlyOwner {\\n        _ownerCandidate = newOwner;\\n\\n        emit OwnerUpdateInitiated(msg.sender, newOwner);\\n    }\\n\\n    /// @notice Confirm ownership between `owner` and `_ownerCandidate`.\\n    function confirmOwner() public payable virtual {\\n        if (_ownerCandidateConfirmed) {\\n            if (msg.sender != owner) revert Unauthorized();\\n\\n            delete _ownerCandidateConfirmed;\\n\\n            address newOwner = _ownerCandidate;\\n\\n            owner = newOwner;\\n\\n            emit OwnershipTransferred(msg.sender, newOwner);\\n        } else {\\n            if (msg.sender != _ownerCandidate) revert Unauthorized();\\n\\n            _ownerCandidateConfirmed = true;\\n        }\\n    }\\n\\n    /// @notice Terminate ownership by `owner`.\\n    function renounceOwner() public payable virtual onlyOwner {\\n        delete owner;\\n\\n        emit OwnershipTransferred(msg.sender, address(0));\\n    }\\n}\\n\",\"keccak256\":\"0x0e17d31793938b7361f24eccec66234f57a11155e1e33aa0e9c26f4c49cf1b6b\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x6080604052662386f26fc100006003553480156200001c57600080fd5b5060405162001dee38038062001dee8339810160408190526200003f91620010e3565b600080546001600160a01b0319166001600160a01b03831690811782556040518392907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a3506040805180820190915260038152626236c560e81b60208083019190915260008052600690527f54cdd369e4e8a8515e52ca72ec816c2101831ad1f18bf44102ed171459c9b4f890620000dc9082620011ba565b506040805180820190915260038152621121cb60e91b6020808301919091526001600052600690527f3e5fec24aa4dc4e5aee2e025e51e1392c72a2500577559fae9665c6d52bd6a3190620001329082620011ba565b50604080518082019091526003815262922b2b60e81b6020808301919091526002600052600690527f8819ef417987f8ae7a81f42cdfb18815282fe989326fbff903d13cf0e03ace2990620001889082620011ba565b506040805180820190915260038082526249893360e81b602080840191909152600091909152600690527f75f96ab15d697e93042dc45b5c896c4b27e89bb6eaf39475c5c371cb2513f7d290620001e09082620011ba565b5060408051808201909152600381526231313160e81b6020808301919091526004600052600690527fc5069e24aaadb2addc3e52e868fcf3f4f8acf5a87e24300992fd4540c2a87eed90620002369082620011ba565b50604080518082019091526004815263784fc7d360e11b60208083019190915260008052600790527f6d5257204ebe7d88fd91ae87941cb2dd9d8062b64ae5a2bd2d28ec40b9fbf6df906200028c9082620011ba565b506040805180820190915260048152633c27e9a760e21b6020808301919091526001600052600790527fb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b82890620002e39082620011ba565b50604080518082019091526004815263784fd34560e11b6020808301919091526002600052600790527fb7c774451310d1be4108bc180d1b52823cb0ee0274a6c0081bcaf94f115fb96d906200033a9082620011ba565b506040805180820190915260048152633c27e9a160e21b6020808301919091526003600052600790527f3be6fd20d5acfde5b873b48692cd31f4d3c7e8ee8a813af4696af8859e5ca6c690620003919082620011ba565b5060408051808201909152600480825263f09f909960e01b602080840191909152600091909152600790527fb805995a7ec585a251200611a61d179cfd7fb105e1ab17dc415a7336783786f790620003ea9082620011ba565b50604080518082019091526004815263f09f90b560e01b6020808301919091526005600052600790527fbcdda56b5d08466ec462cbbe0adfa57cb0a15fcc8940ef68f702f21b787bc93590620004419082620011ba565b50604080518082019091526004815263f09f90b360e01b6020808301919091526006600052600790527f55c5b153ab560fcde54a63b18c7f53d75501706907cef8767fbded79ab9997c790620004989082620011ba565b50604080518082019091526004815263f09f909d60e01b6020808301919091526007600081905290527fb7c49cceb9f85950584035457a41ebbd8cf93b9b612733ad25aa9731ac43aad690620004ef9082620011ba565b50604080518082019091526004815263784fc85d60e11b6020808301919091526008600052600790527f4b1bf46c9f1bd48ff8274d40bad76a6615cb6c59a637d451a3994194b2db86be90620005469082620011ba565b50604080518082019091526004815263f09f919160e01b6020808301919091526009600052600790527ff1f3e9c34634a546b3672c043f73844d83d55591bbe61b8e7e3a72bca1a812bf906200059d9082620011ba565b5060408051808201909152600481526301e13f3560e71b602080830191909152600a600052600790527f3ed157e83ab1bb1f6b7b3760b3368106283d4e15d1f1b08e20d06576445a999490620005f49082620011ba565b506040805180820190915260048152631e13f19160e31b602080830191909152600b600052600790527fb7511a2dbe1513c8574eaafb5266301ff1bbf641d4144b093d6d1b500334bf2f906200064b9082620011ba565b50604080518082019091526004815263784fd55b60e11b602080830191909152600c600052600790527f74b6357e277c778e8ad9a2761a935d45336ec91439b9e1b117eda2efdfe38fad90620006a29082620011ba565b506040805180820190915260048152631e13f4f760e31b602080830191909152600d600052600790527fc6af84bcd7a912c26772dce2b27a335c9acc50e9113bac42fd0b48deecc0f30c90620006f99082620011ba565b50604080518082019091526004815263f09f8e8160e01b602080830191909152600e600052600790527fde7415c6a2f6d5051213edef7c4742786ca35b02a0e77e53b1b2e1ff1a228a6b90620007509082620011ba565b506040805180820190915260048152633c27e4a360e21b602080830191909152600f600052600790527f6695255c0c22b4090576b0ff35e852eba3dd4afabff28976da48e1280061728d90620007a79082620011ba565b5060408051808201909152600481526301e13f1d60e71b6020808301919091526010600052600790527ffdb0fc5c292af6bc7c9afb28ca8e0549b4de965653a829548475c76a1d5c400c90620007fe9082620011ba565b50604080518082019091526004815263784fca5760e11b6020808301919091526011600052600790527f7fecc9f0b925868a8c62ee842da0498074146a036d84a1041d9b5286786bbbf390620008559082620011ba565b50604080518082019091526004815263784fc94760e11b6020808301919091526012600052600790527ff2e2385bc2a5be32198cd1e425186910eb1a233b2b2a22be149cee4dc72d016290620008ac9082620011ba565b50604080518082019091526004815263f09faa8560e01b6020808301919091526013600052600790527fd2883cc7ca79e6788a6966eff1ace0b629a1cf53002057694248b4aad1495d0490620009039082620011ba565b50604080518082019091526004815263f09f8f9760e01b6020808301919091526014600052600790527f6e56ebdab929350837326db61d5900fe8049687e26c2b2352b923b9071b0f558906200095a9082620011ba565b506040805180820190915260048152630f09fa7b60e41b6020808301919091526015600052600790527fe0187fe5ac48a8a39472250620f415014331c778dcb200418004c2f11134f4b790620009b19082620011ba565b50604080518082019091526004815263784fd3d960e11b6020808301919091526016600052600790527f3b7c8b1df7c71af88cda2092b2bbd35702a3b48a00f02a41bbad24edc78296dc9062000a089082620011ba565b50604080518082019091526004815263784fd3d560e11b6020808301919091526017600052600790527f5accb0a76e08a2a714c4829017d93791c3ab8bf86aeba577664b53daa3980fc39062000a5f9082620011ba565b5060408051808201909152600780825266f09f9ba1efb88f60c81b6020808401919091526018600052527f3bf7345a6990691667b37eae570be3ee590981fb621ffd7bcfcf671ed9f04a529062000ab79082620011ba565b506040805180820190915260048152633c27e9eb60e21b6020808301919091526019600052600790527f1cde6cb1740f09c25a8b50cd4b6c3dad85fcffb88431b219ec071afe904737439062000b0e9082620011ba565b50604080518082019091526004815263f09fa7ad60e01b602080830191909152601a600052600790527f8ea1380f2e06c430dc5770b5e760f421089091ba950352306420da23cb1b40ef9062000b659082620011ba565b50604080518082019091526004815263784fd3d760e11b602080830191909152601b600052600790527fb1874deda5418f009d7e691b6e8e46065303f4a35e9c4d70b4ab35bd823421ca9062000bbc9082620011ba565b50604080518082019091526006815265e29a94efb88f60d01b602080830191909152601c600052600790527f0425d4cac564eade3739b18cff91bb2bc855f9c26bed98f6e089d895e00c3d5f9062000c159082620011ba565b506040805180820190915260048152630f09fa7b60e41b602080830191909152601d600052600790527f69a4526ee6c6fed706e20afa2cce030b28dbcbab5e4e2d1918c6e718397284009062000c6c9082620011ba565b50604080518082019091526004815263f09fa7b160e01b602080830191909152601e600052600790527f5efb79fbc11da2125514bcdef1696210bd26aebc3ba57e1be8a36c2cafb4d4789062000cc39082620011ba565b50604080518082019091526006815265e29b93efb88f60d01b602080830191909152601f600052600790527f4f137b25557674fba3a2aa0e89b823e64184395781dd7e4b464a41a0168ddc1b9062000d1c9082620011ba565b506040805180820190915260048152631e13f1f160e31b6020808301919091526000819052600790527f977c7c98651e0e2a752fb735f769df5240153cd477a3baa861921344a2ddde909062000d739082620011ba565b5060408051808201909152600481526301e13f1f60e71b6020808301919091526021600052600790527fedddd91313f7c989bdc231bc624ea9908f2340b23ff878dfbd27a2cf1c3ec99f9062000dca9082620011ba565b50604080518082019091526006815265e29abdefb88f60d01b6020808301919091526022600052600790527f8ae59643d21cc5b685464383c8217a4e7f574ef463cc32244f10eaf1145fdc079062000e239082620011ba565b506040805180820190915260048152630f09f8f960e41b6020808301919091526023600052600790527fe59c24461a0fb1a13e4f19756f944b3655e4523c2fe4b0ad1e7bb8969921a37b9062000e7a9082620011ba565b50604080518082019091526004815263f09f8f9360e01b6020808301919091526024600052600790527ffce7dc5bb3cbbc540cf9457d032a1a1aae0059624b6dd6eecb9d2c06cd32c09c9062000ed19082620011ba565b50604080518082019091526004815263784fc75f60e11b6020808301919091526025600052600790527fc7478704eb468bb68beafddaec378319f804ef3f01f1e6e41b277bd6f15398399062000f289082620011ba565b50604080518082019091526004815263784fc75960e11b6020808301919091526026600052600790527fa0180b01d5c6c892f34e348721f16e168c551e0a5dac26b1bd68253fcef49b1f9062000f7f9082620011ba565b50604080518082019091526004815263f09f8f8960e01b6020808301919091526027600052600790527fa42755a2e6766ad8a3c8e0dc6925c5b384a166afae805bfb4a3c3233012e53459062000fd69082620011ba565b50604080518082019091526004815263f09f8ebd60e01b6020808301919091526028600052600790527f07979f83feb91e6e71e734e272c56671bf06f2c8bf8067684cbe31f663fccc52906200102d9082620011ba565b50604080518082019091526004815263784fc7c360e11b6020808301919091526029600052600790527f61042a91e6bf866457bba3c0e1666b25163b3849470db2bebc37920294f5c18990620010849082620011ba565b50604080518082019091526004815263f09f8eaf60e01b602080830191909152602a600052600790527fc4250a0f26818bb2f4c50553605e6aa5374a022de55e294b0c5f6716bcaddbf890620010db9082620011ba565b505062001286565b600060208284031215620010f657600080fd5b81516001600160a01b03811681146200110e57600080fd5b9392505050565b634e487b7160e01b600052604160045260246000fd5b600181811c908216806200114057607f821691505b6020821081036200116157634e487b7160e01b600052602260045260246000fd5b50919050565b601f821115620011b557600081815260208120601f850160051c81016020861015620011905750805b601f850160051c820191505b81811015620011b1578281556001016200119c565b5050505b505050565b81516001600160401b03811115620011d657620011d662001115565b620011ee81620011e784546200112b565b8462001167565b602080601f8311600181146200122657600084156200120d5750858301515b600019600386901b1c1916600185901b178555620011b1565b600085815260208120601f198616915b82811015620012575788860151825594840194600190910190840162001236565b5085821015620012765787850151600019600388901b60f8161c191681555b5050505050600190811b01905550565b610b5880620012966000396000f3fe6080604052600436106100dd5760003560e01c806396cfdda81161007f578063b082c48811610059578063b082c4881461021c578063bd9b6d861461023c578063be7d97b314610244578063f2fde38b1461026457600080fd5b806396cfdda8146101c95780639f571e0b146101dc578063a96cc2f9146101fc57600080fd5b806328c23a45116100bb57806328c23a451461016157806363ff13681461016957806380057b9a1461017c5780638da5cb5b146101a957600080fd5b8063086439a7146100e25780630cd5391e1461011f57806325eb507314610141575b600080fd5b3480156100ee57600080fd5b50600254610102906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b34801561012b57600080fd5b5061013f61013a366004610993565b610277565b005b34801561014d57600080fd5b5061013f61015c3660046109cf565b61030c565b61013f61033b565b61013f6101773660046109e8565b6103a1565b34801561018857600080fd5b5061019c6101973660046109cf565b6104e3565b6040516101169190610a61565b3480156101b557600080fd5b50600054610102906001600160a01b031681565b61013f6101d73660046109e8565b610595565b3480156101e857600080fd5b5061019c6101f7366004610a7b565b6106d3565b34801561020857600080fd5b5061019c610217366004610a7b565b6106f4565b34801561022857600080fd5b5061013f610237366004610aae565b610715565b61013f610761565b34801561025057600080fd5b5061019c61025f3660046109cf565b610837565b61013f610272366004610aae565b610864565b6002546001600160a01b031633146102d65760405162461bcd60e51b815260206004820152601d60248201527f576562334361726444657369676e3a6e6f742d617574686f72697a656400000060448201526064015b60405180910390fd5b6000928352600460209081526040808520805460ff1990811660ff96871617909155600590925290932080549093169116179055565b6000546001600160a01b03163314610336576040516282b42960e81b815260040160405180910390fd5b600355565b6000546001600160a01b03163314610365576040516282b42960e81b815260040160405180910390fd5b600080546001600160a01b031916815560405133907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3565b6003543410156103f35760405162461bcd60e51b815260206004820152601f60248201527f576562334361726444657369676e3a696e73756666696369656e742d6574680060448201526064016102cd565b6002546040516331a9108f60e11b8152600481018490526001600160a01b0390911690636352211e90602401602060405180830381865afa15801561043c573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104609190610acb565b6001600160a01b0316336001600160a01b0316146104bb5760405162461bcd60e51b81526020600482015260186024820152772bb2b119a1b0b9322232b9b4b3b71d3737ba16b7bbb732b960411b60448201526064016102cd565b6000828152600460205260409020805460ff191660ff83161790556104df346108da565b5050565b60008181526004602090815260408083205460ff1683526006909152902080546060919061051090610ae8565b80601f016020809104026020016040519081016040528092919081815260200182805461053c90610ae8565b80156105895780601f1061055e57610100808354040283529160200191610589565b820191906000526020600020905b81548152906001019060200180831161056c57829003601f168201915b50505050509050919050565b6003543410156105e75760405162461bcd60e51b815260206004820152601f60248201527f576562334361726444657369676e3a696e73756666696369656e742d6574680060448201526064016102cd565b6002546040516331a9108f60e11b8152600481018490526001600160a01b0390911690636352211e90602401602060405180830381865afa158015610630573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106549190610acb565b6001600160a01b0316336001600160a01b0316146106af5760405162461bcd60e51b81526020600482015260186024820152772bb2b119a1b0b9322232b9b4b3b71d3737ba16b7bbb732b960411b60448201526064016102cd565b6000828152600560205260409020805460ff191660ff83161790556104df346108da565b60ff8116600090815260066020526040902080546060919061051090610ae8565b60ff8116600090815260076020526040902080546060919061051090610ae8565b6000546001600160a01b0316331461073f576040516282b42960e81b815260040160405180910390fd5b600280546001600160a01b0319166001600160a01b0392909216919091179055565b600154600160a01b900460ff16156107f8576000546001600160a01b0316331461079d576040516282b42960e81b815260040160405180910390fd5b6001805460ff60a01b198116909155600080546001600160a01b0319166001600160a01b039092169182178155604051829133917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a350565b6001546001600160a01b03163314610822576040516282b42960e81b815260040160405180910390fd5b6001805460ff60a01b1916600160a01b179055565b60008181526005602090815260408083205460ff1683526007909152902080546060919061051090610ae8565b6000546001600160a01b0316331461088e576040516282b42960e81b815260040160405180910390fd5b600180546001600160a01b0319166001600160a01b03831690811790915560405133907f365e8eca24e61548e99db9d948e4f9cf79224bcbf4fc81afe651e6e80921c87590600090a350565b6002546040516000916001600160a01b03169083908381818185875af1925050503d8060008114610927576040519150601f19603f3d011682016040523d82523d6000602084013e61092c565b606091505b50509050806104df5760405162461bcd60e51b815260206004820152601a60248201527f576562334361726444657369676e3a63616c6c2d6661696c656400000000000060448201526064016102cd565b803560ff8116811461098e57600080fd5b919050565b6000806000606084860312156109a857600080fd5b833592506109b86020850161097d565b91506109c66040850161097d565b90509250925092565b6000602082840312156109e157600080fd5b5035919050565b600080604083850312156109fb57600080fd5b82359150610a0b6020840161097d565b90509250929050565b6000815180845260005b81811015610a3a57602081850181015186830182015201610a1e565b81811115610a4c576000602083870101525b50601f01601f19169290920160200192915050565b602081526000610a746020830184610a14565b9392505050565b600060208284031215610a8d57600080fd5b610a748261097d565b6001600160a01b0381168114610aab57600080fd5b50565b600060208284031215610ac057600080fd5b8135610a7481610a96565b600060208284031215610add57600080fd5b8151610a7481610a96565b600181811c90821680610afc57607f821691505b602082108103610b1c57634e487b7160e01b600052602260045260246000fd5b5091905056fea2646970667358221220a4886222fb5178d7390825691cc895f1c2fae4b69066eb6f2e7e58cf6b8430a164736f6c634300080f0033",
+  "deployedBytecode": "0x6080604052600436106100dd5760003560e01c806396cfdda81161007f578063b082c48811610059578063b082c4881461021c578063bd9b6d861461023c578063be7d97b314610244578063f2fde38b1461026457600080fd5b806396cfdda8146101c95780639f571e0b146101dc578063a96cc2f9146101fc57600080fd5b806328c23a45116100bb57806328c23a451461016157806363ff13681461016957806380057b9a1461017c5780638da5cb5b146101a957600080fd5b8063086439a7146100e25780630cd5391e1461011f57806325eb507314610141575b600080fd5b3480156100ee57600080fd5b50600254610102906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b34801561012b57600080fd5b5061013f61013a366004610993565b610277565b005b34801561014d57600080fd5b5061013f61015c3660046109cf565b61030c565b61013f61033b565b61013f6101773660046109e8565b6103a1565b34801561018857600080fd5b5061019c6101973660046109cf565b6104e3565b6040516101169190610a61565b3480156101b557600080fd5b50600054610102906001600160a01b031681565b61013f6101d73660046109e8565b610595565b3480156101e857600080fd5b5061019c6101f7366004610a7b565b6106d3565b34801561020857600080fd5b5061019c610217366004610a7b565b6106f4565b34801561022857600080fd5b5061013f610237366004610aae565b610715565b61013f610761565b34801561025057600080fd5b5061019c61025f3660046109cf565b610837565b61013f610272366004610aae565b610864565b6002546001600160a01b031633146102d65760405162461bcd60e51b815260206004820152601d60248201527f576562334361726444657369676e3a6e6f742d617574686f72697a656400000060448201526064015b60405180910390fd5b6000928352600460209081526040808520805460ff1990811660ff96871617909155600590925290932080549093169116179055565b6000546001600160a01b03163314610336576040516282b42960e81b815260040160405180910390fd5b600355565b6000546001600160a01b03163314610365576040516282b42960e81b815260040160405180910390fd5b600080546001600160a01b031916815560405133907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3565b6003543410156103f35760405162461bcd60e51b815260206004820152601f60248201527f576562334361726444657369676e3a696e73756666696369656e742d6574680060448201526064016102cd565b6002546040516331a9108f60e11b8152600481018490526001600160a01b0390911690636352211e90602401602060405180830381865afa15801561043c573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104609190610acb565b6001600160a01b0316336001600160a01b0316146104bb5760405162461bcd60e51b81526020600482015260186024820152772bb2b119a1b0b9322232b9b4b3b71d3737ba16b7bbb732b960411b60448201526064016102cd565b6000828152600460205260409020805460ff191660ff83161790556104df346108da565b5050565b60008181526004602090815260408083205460ff1683526006909152902080546060919061051090610ae8565b80601f016020809104026020016040519081016040528092919081815260200182805461053c90610ae8565b80156105895780601f1061055e57610100808354040283529160200191610589565b820191906000526020600020905b81548152906001019060200180831161056c57829003601f168201915b50505050509050919050565b6003543410156105e75760405162461bcd60e51b815260206004820152601f60248201527f576562334361726444657369676e3a696e73756666696369656e742d6574680060448201526064016102cd565b6002546040516331a9108f60e11b8152600481018490526001600160a01b0390911690636352211e90602401602060405180830381865afa158015610630573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106549190610acb565b6001600160a01b0316336001600160a01b0316146106af5760405162461bcd60e51b81526020600482015260186024820152772bb2b119a1b0b9322232b9b4b3b71d3737ba16b7bbb732b960411b60448201526064016102cd565b6000828152600560205260409020805460ff191660ff83161790556104df346108da565b60ff8116600090815260066020526040902080546060919061051090610ae8565b60ff8116600090815260076020526040902080546060919061051090610ae8565b6000546001600160a01b0316331461073f576040516282b42960e81b815260040160405180910390fd5b600280546001600160a01b0319166001600160a01b0392909216919091179055565b600154600160a01b900460ff16156107f8576000546001600160a01b0316331461079d576040516282b42960e81b815260040160405180910390fd5b6001805460ff60a01b198116909155600080546001600160a01b0319166001600160a01b039092169182178155604051829133917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a350565b6001546001600160a01b03163314610822576040516282b42960e81b815260040160405180910390fd5b6001805460ff60a01b1916600160a01b179055565b60008181526005602090815260408083205460ff1683526007909152902080546060919061051090610ae8565b6000546001600160a01b0316331461088e576040516282b42960e81b815260040160405180910390fd5b600180546001600160a01b0319166001600160a01b03831690811790915560405133907f365e8eca24e61548e99db9d948e4f9cf79224bcbf4fc81afe651e6e80921c87590600090a350565b6002546040516000916001600160a01b03169083908381818185875af1925050503d8060008114610927576040519150601f19603f3d011682016040523d82523d6000602084013e61092c565b606091505b50509050806104df5760405162461bcd60e51b815260206004820152601a60248201527f576562334361726444657369676e3a63616c6c2d6661696c656400000000000060448201526064016102cd565b803560ff8116811461098e57600080fd5b919050565b6000806000606084860312156109a857600080fd5b833592506109b86020850161097d565b91506109c66040850161097d565b90509250925092565b6000602082840312156109e157600080fd5b5035919050565b600080604083850312156109fb57600080fd5b82359150610a0b6020840161097d565b90509250929050565b6000815180845260005b81811015610a3a57602081850181015186830182015201610a1e565b81811115610a4c576000602083870101525b50601f01601f19169290920160200192915050565b602081526000610a746020830184610a14565b9392505050565b600060208284031215610a8d57600080fd5b610a748261097d565b6001600160a01b0381168114610aab57600080fd5b50565b600060208284031215610ac057600080fd5b8135610a7481610a96565b600060208284031215610add57600080fd5b8151610a7481610a96565b600181811c90821680610afc57607f821691505b602082108103610b1c57634e487b7160e01b600052602260045260246000fd5b5091905056fea2646970667358221220a4886222fb5178d7390825691cc895f1c2fae4b69066eb6f2e7e58cf6b8430a164736f6c634300080f0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "transferOwnership(address)": {
+        "params": {
+          "newOwner": "The `_ownerCandidate` that will `confirmOwner()`."
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "errors": {
+      "Unauthorized()": [
+        {
+          "notice": "----------------------------------------------------------------------- Custom Errors -----------------------------------------------------------------------"
+        }
+      ]
+    },
+    "events": {
+      "OwnerUpdateInitiated(address,address)": {
+        "notice": "----------------------------------------------------------------------- Events -----------------------------------------------------------------------"
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "confirmOwner()": {
+        "notice": "Confirm ownership between `owner` and `_ownerCandidate`."
+      },
+      "owner()": {
+        "notice": "----------------------------------------------------------------------- Ownership Storage -----------------------------------------------------------------------"
+      },
+      "renounceOwner()": {
+        "notice": "Terminate ownership by `owner`."
+      },
+      "transferOwnership(address)": {
+        "notice": "Initiate ownership transfer."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 14240,
+        "contract": "contracts/CardDesign.sol:CardDesign",
+        "label": "owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 14242,
+        "contract": "contracts/CardDesign.sol:CardDesign",
+        "label": "_ownerCandidate",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      },
+      {
+        "astId": 14244,
+        "contract": "contracts/CardDesign.sol:CardDesign",
+        "label": "_ownerCandidateConfirmed",
+        "offset": 20,
+        "slot": "1",
+        "type": "t_bool"
+      },
+      {
+        "astId": 1617,
+        "contract": "contracts/CardDesign.sol:CardDesign",
+        "label": "erc721KActivatorInstance",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_address"
+      },
+      {
+        "astId": 1620,
+        "contract": "contracts/CardDesign.sol:CardDesign",
+        "label": "STYLE_UPGRADE_VALUE",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 1624,
+        "contract": "contracts/CardDesign.sol:CardDesign",
+        "label": "_color",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_mapping(t_uint256,t_uint8)"
+      },
+      {
+        "astId": 1628,
+        "contract": "contracts/CardDesign.sol:CardDesign",
+        "label": "_emoji",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_mapping(t_uint256,t_uint8)"
+      },
+      {
+        "astId": 1632,
+        "contract": "contracts/CardDesign.sol:CardDesign",
+        "label": "_colorMap",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_mapping(t_uint8,t_bytes_storage)"
+      },
+      {
+        "astId": 1636,
+        "contract": "contracts/CardDesign.sol:CardDesign",
+        "label": "_emojiMap",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_mapping(t_uint8,t_string_storage)"
+      },
+      {
+        "astId": 1640,
+        "contract": "contracts/CardDesign.sol:CardDesign",
+        "label": "_supporter",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_mapping(t_address,t_bool)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_bytes_storage": {
+        "encoding": "bytes",
+        "label": "bytes",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_uint256,t_uint8)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => uint8)",
+        "numberOfBytes": "32",
+        "value": "t_uint8"
+      },
+      "t_mapping(t_uint8,t_bytes_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint8",
+        "label": "mapping(uint8 => bytes)",
+        "numberOfBytes": "32",
+        "value": "t_bytes_storage"
+      },
+      "t_mapping(t_uint8,t_string_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint8",
+        "label": "mapping(uint8 => string)",
+        "numberOfBytes": "32",
+        "value": "t_string_storage"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      },
+      "t_uint8": {
+        "encoding": "inplace",
+        "label": "uint8",
+        "numberOfBytes": "1"
+      }
+    }
+  }
+}

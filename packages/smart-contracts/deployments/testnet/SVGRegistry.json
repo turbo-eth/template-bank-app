@@ -1,0 +1,226 @@
+{
+  "address": "0xf212c1F9d768AbBB111a23cbAa4172FdAA2A6600",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "Unauthorized",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "widgetId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "input",
+          "type": "bytes"
+        }
+      ],
+      "name": "fetch",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "widgetId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getWidget",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "widget",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "widgetId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "widget",
+          "type": "address"
+        }
+      ],
+      "name": "setWidget",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xd5fb07308960d6562c17a38fb93bc104f35c3e147b9d91ac249d3d70d7057d3b",
+  "receipt": {
+    "to": null,
+    "from": "0x8C46e53dC60EC32e8DD67Fb11f076fF3EcDc5211",
+    "contractAddress": "0xf212c1F9d768AbBB111a23cbAa4172FdAA2A6600",
+    "transactionIndex": 25,
+    "gasUsed": "318024",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000800000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000200000000000000000000000120000000000000000000800000000000000000000000000040000400000000000000000000000000000000000000000000000000000000000000000810000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x35fc3d058703dc68ba5248b6fb056a1816ff7cb2dbfe5a08365668ebaf027bc8",
+    "transactionHash": "0xd5fb07308960d6562c17a38fb93bc104f35c3e147b9d91ac249d3d70d7057d3b",
+    "logs": [
+      {
+        "transactionIndex": 25,
+        "blockNumber": 3472112,
+        "transactionHash": "0xd5fb07308960d6562c17a38fb93bc104f35c3e147b9d91ac249d3d70d7057d3b",
+        "address": "0xf212c1F9d768AbBB111a23cbAa4172FdAA2A6600",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x0000000000000000000000008c46e53dc60ec32e8dd67fb11f076ff3ecdc5211"
+        ],
+        "data": "0x",
+        "logIndex": 34,
+        "blockHash": "0x35fc3d058703dc68ba5248b6fb056a1816ff7cb2dbfe5a08365668ebaf027bc8"
+      }
+    ],
+    "blockNumber": 3472112,
+    "cumulativeGasUsed": "2716226",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "404f5463dd6ebc8ff1a6e382af5684f3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"Unauthorized\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"widgetId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"input\",\"type\":\"bytes\"}],\"name\":\"fetch\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"widgetId\",\"type\":\"bytes32\"}],\"name\":\"getWidget\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"widget\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"widgetId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"widget\",\"type\":\"address\"}],\"name\":\"setWidget\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"errors\":{\"Unauthorized()\":[{\"notice\":\"----------------------------------------------------------------------- Custom Errors -----------------------------------------------------------------------\"}]},\"events\":{\"OwnershipTransferred(address,address)\":{\"notice\":\"----------------------------------------------------------------------- Events -----------------------------------------------------------------------\"}},\"kind\":\"user\",\"methods\":{\"owner()\":{\"notice\":\"----------------------------------------------------------------------- Ownership Storage -----------------------------------------------------------------------\"},\"transferOwnership(address)\":{\"notice\":\"----------------------------------------------------------------------- Ownership Logic -----------------------------------------------------------------------\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/ERC721K/svg/SVGRegistry.sol\":\"SVGRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/ERC721K/interfaces/ISVGModule.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.15;\\n\\ninterface ISVGModule {\\n  function render(bytes memory input) external view returns (string memory);\\n\\n  function getEncoding() external view returns (string memory);\\n}\\n\",\"keccak256\":\"0x3352c15d00c6db8c108858e4839252c81b7d17da394778ab572c055146b43e27\",\"license\":\"MIT\"},\"contracts/ERC721K/svg/SVGRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.15;\\n\\nimport { Owned } from \\\"../../Solbase/Owned.sol\\\";\\nimport { ISVGModule } from \\\"../interfaces/ISVGModule.sol\\\";\\n\\ncontract SVGRegistry is Owned {\\n  mapping(bytes32 => address) private _modules;\\n\\n  constructor() Owned(msg.sender) {}\\n\\n  function fetch(bytes32 widgetId, bytes memory input) external view returns (string memory) {\\n    if (_modules[widgetId] != address(0)) {\\n      return \\\"ISVGModule(_modules[widgetId]).decode(input);\\\";\\n    } else {\\n      return \\\"\\\";\\n    }\\n  }\\n\\n  function getWidget(bytes32 widgetId) external view returns (address widget) {\\n    return _modules[widgetId];\\n  }\\n\\n  function setWidget(bytes32 widgetId, address widget) external onlyOwner {\\n    _modules[widgetId] = widget;\\n  }\\n}\\n\",\"keccak256\":\"0x10385cd1801ae99440dce0740966aa30936cbd149929b7a6f291398a6dcb4e97\",\"license\":\"MIT\"},\"contracts/Solbase/Owned.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.4;\\n\\n/// @notice Simple single owner authorization mixin.\\n/// @author Solbase (https://github.com/Sol-DAO/Solbase/blob/main/src/auth/Owned.sol)\\n/// @author Modified from Solmate (https://github.com/transmissions11/solmate/blob/main/src/auth/Owned.sol)\\nabstract contract Owned {\\n    /// -----------------------------------------------------------------------\\n    /// Events\\n    /// -----------------------------------------------------------------------\\n\\n    event OwnershipTransferred(address indexed user, address indexed newOwner);\\n\\n    /// -----------------------------------------------------------------------\\n    /// Custom Errors\\n    /// -----------------------------------------------------------------------\\n\\n    error Unauthorized();\\n\\n    /// -----------------------------------------------------------------------\\n    /// Ownership Storage\\n    /// -----------------------------------------------------------------------\\n\\n    address public owner;\\n\\n    modifier onlyOwner() virtual {\\n        if (msg.sender != owner) revert Unauthorized();\\n\\n        _;\\n    }\\n\\n    /// -----------------------------------------------------------------------\\n    /// Constructor\\n    /// -----------------------------------------------------------------------\\n\\n    constructor(address _owner) {\\n        owner = _owner;\\n\\n        emit OwnershipTransferred(address(0), _owner);\\n    }\\n\\n    /// -----------------------------------------------------------------------\\n    /// Ownership Logic\\n    /// -----------------------------------------------------------------------\\n\\n    function transferOwnership(address newOwner) public payable virtual onlyOwner {\\n        owner = newOwner;\\n\\n        emit OwnershipTransferred(msg.sender, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0xf0368e1996c0fcad13e23bcf261711339a3134eb0f3d59da06c52b86612c67a5\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b031916339081178255604051909182917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350610458806100616000396000f3fe60806040526004361061004a5760003560e01c80631045b14e1461004f5780633a68f5db146100715780638da5cb5b146100a7578063e0d18500146100df578063f2fde38b14610115575b600080fd5b34801561005b57600080fd5b5061006f61006a366004610268565b610128565b005b34801561007d57600080fd5b5061009161008c3660046102aa565b610180565b60405161009e9190610365565b60405180910390f35b3480156100b357600080fd5b506000546100c7906001600160a01b031681565b6040516001600160a01b03909116815260200161009e565b3480156100eb57600080fd5b506100c76100fa3660046103ba565b6000908152600160205260409020546001600160a01b031690565b61006f6101233660046103d3565b6101d7565b6000546001600160a01b03163314610152576040516282b42960e81b815260040160405180910390fd5b60009182526001602052604090912080546001600160a01b0319166001600160a01b03909216919091179055565b6000828152600160205260409020546060906001600160a01b0316156101c0576040518060600160405280602d81526020016103f6602d913990506101d1565b506040805160208101909152600081525b92915050565b6000546001600160a01b03163314610201576040516282b42960e81b815260040160405180910390fd5b600080546001600160a01b0319166001600160a01b0383169081178255604051909133917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a350565b80356001600160a01b038116811461026357600080fd5b919050565b6000806040838503121561027b57600080fd5b8235915061028b6020840161024c565b90509250929050565b634e487b7160e01b600052604160045260246000fd5b600080604083850312156102bd57600080fd5b82359150602083013567ffffffffffffffff808211156102dc57600080fd5b818501915085601f8301126102f057600080fd5b81358181111561030257610302610294565b604051601f8201601f19908116603f0116810190838211818310171561032a5761032a610294565b8160405282815288602084870101111561034357600080fd5b8260208601602083013760006020848301015280955050505050509250929050565b600060208083528351808285015260005b8181101561039257858101830151858201604001528201610376565b818111156103a4576000604083870101525b50601f01601f1916929092016040019392505050565b6000602082840312156103cc57600080fd5b5035919050565b6000602082840312156103e557600080fd5b6103ee8261024c565b939250505056fe495356474d6f64756c65285f6d6f64756c65735b77696467657449645d292e6465636f646528696e707574293ba2646970667358221220f5c4a7041533971016624ef82283b740f99650a4166477edd9a7f9ebd92bf5d464736f6c634300080f0033",
+  "deployedBytecode": "0x60806040526004361061004a5760003560e01c80631045b14e1461004f5780633a68f5db146100715780638da5cb5b146100a7578063e0d18500146100df578063f2fde38b14610115575b600080fd5b34801561005b57600080fd5b5061006f61006a366004610268565b610128565b005b34801561007d57600080fd5b5061009161008c3660046102aa565b610180565b60405161009e9190610365565b60405180910390f35b3480156100b357600080fd5b506000546100c7906001600160a01b031681565b6040516001600160a01b03909116815260200161009e565b3480156100eb57600080fd5b506100c76100fa3660046103ba565b6000908152600160205260409020546001600160a01b031690565b61006f6101233660046103d3565b6101d7565b6000546001600160a01b03163314610152576040516282b42960e81b815260040160405180910390fd5b60009182526001602052604090912080546001600160a01b0319166001600160a01b03909216919091179055565b6000828152600160205260409020546060906001600160a01b0316156101c0576040518060600160405280602d81526020016103f6602d913990506101d1565b506040805160208101909152600081525b92915050565b6000546001600160a01b03163314610201576040516282b42960e81b815260040160405180910390fd5b600080546001600160a01b0319166001600160a01b0383169081178255604051909133917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a350565b80356001600160a01b038116811461026357600080fd5b919050565b6000806040838503121561027b57600080fd5b8235915061028b6020840161024c565b90509250929050565b634e487b7160e01b600052604160045260246000fd5b600080604083850312156102bd57600080fd5b82359150602083013567ffffffffffffffff808211156102dc57600080fd5b818501915085601f8301126102f057600080fd5b81358181111561030257610302610294565b604051601f8201601f19908116603f0116810190838211818310171561032a5761032a610294565b8160405282815288602084870101111561034357600080fd5b8260208601602083013760006020848301015280955050505050509250929050565b600060208083528351808285015260005b8181101561039257858101830151858201604001528201610376565b818111156103a4576000604083870101525b50601f01601f1916929092016040019392505050565b6000602082840312156103cc57600080fd5b5035919050565b6000602082840312156103e557600080fd5b6103ee8261024c565b939250505056fe495356474d6f64756c65285f6d6f64756c65735b77696467657449645d292e6465636f646528696e707574293ba2646970667358221220f5c4a7041533971016624ef82283b740f99650a4166477edd9a7f9ebd92bf5d464736f6c634300080f0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "errors": {
+      "Unauthorized()": [
+        {
+          "notice": "----------------------------------------------------------------------- Custom Errors -----------------------------------------------------------------------"
+        }
+      ]
+    },
+    "events": {
+      "OwnershipTransferred(address,address)": {
+        "notice": "----------------------------------------------------------------------- Events -----------------------------------------------------------------------"
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "owner()": {
+        "notice": "----------------------------------------------------------------------- Ownership Storage -----------------------------------------------------------------------"
+      },
+      "transferOwnership(address)": {
+        "notice": "----------------------------------------------------------------------- Ownership Logic -----------------------------------------------------------------------"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 12571,
+        "contract": "contracts/ERC721K/svg/SVGRegistry.sol:SVGRegistry",
+        "label": "owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 6642,
+        "contract": "contracts/ERC721K/svg/SVGRegistry.sol:SVGRegistry",
+        "label": "_modules",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_bytes32,t_address)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_bytes32,t_address)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      }
+    }
+  }
+}

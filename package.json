@@ -1,0 +1,30 @@
+{
+	"private": true,
+	"scripts": {
+	  "build": "turbo run build",
+	  "clean": "turbo run clean ; rimraf node_modules",
+	  "dev": "turbo run dev",
+	  "export": "turbo run export",
+	  "deploy:dev": "turbo run deploy:dev",
+	  "lint": "turbo run lint",
+	  "format": "turbo run format",
+	  "test": "turbo run test",
+	  "fix": "syncpack fix-mismatches --source 'apps/*/package.json'"
+	},
+	"devDependencies": {
+	  "eslint": "8.30.0",
+	  "rimraf": "^4.4.0",
+	  "syncpack": "^9.8.4",
+	  "turbo": "latest"
+	},
+	"packageManager": "pnpm@8.1.0",
+	"workspaces": [
+	  "apps/*"
+	],
+	"pnpm": {
+	  "overrides": {
+		"wagmi": "0.12.2"
+	  }
+	}
+  }
+  

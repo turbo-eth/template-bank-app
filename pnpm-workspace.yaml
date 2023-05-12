@@ -1,0 +1,7 @@
+packages:
+  - "apps/*"
+  - "framework/*"
+  - "packages/*"
+  - "sdk/*"
+overrides:
+  wagmi: 0.12.2
