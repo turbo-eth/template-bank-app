@@ -31,9 +31,6 @@ importers:
       '@foundry-rs/hardhat-forge':
         specifier: ^0.1.7
         version: 0.1.17(@nomiclabs/hardhat-ethers@2.0.4)(ethereum-waffle@3.4.0)(ethers@5.7.2)(hardhat@2.13.0)
-      '@openzeppelin/contracts':
-        specifier: ^4.8.3
-        version: 4.8.3
     devDependencies:
       '@ethersproject/abi':
         specifier: 5.6.1
@@ -4550,10 +4547,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /@openzeppelin/contracts@4.8.3:
-    resolution: {integrity: sha512-bQHV8R9Me8IaJoJ2vPG4rXcL7seB7YVuskr4f+f5RyOStSZetwzkWtoqDMl5erkBJy0lDRUnIR2WIkPiC0GJlg==}
-    dev: false
 
   /@openzeppelin/hardhat-upgrades@1.14.0(@nomiclabs/hardhat-ethers@2.0.4)(hardhat@2.13.0):
     resolution: {integrity: sha512-dWLC+cgawHcZ5AbEblA3nTrBpcG9J7Z7J5UmM7qdsc/Yc97USJjXfcD6uYOQ+PhyFVBY0Ni83WGVll48d4QRWQ==}
