@@ -76,6 +76,7 @@
   "dependencies": {
     "@foundry-rs/hardhat": "^0.1.6",
     "@foundry-rs/hardhat-anvil": "^0.1.5",
-    "@foundry-rs/hardhat-forge": "^0.1.7"
+    "@foundry-rs/hardhat-forge": "^0.1.7",
+    "@openzeppelin/contracts": "^4.8.3"
   }
 }
