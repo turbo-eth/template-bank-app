@@ -27,7 +27,7 @@ pnpm install
 #### Development
 ```bash
 pnpm dev
-```
+[label](README.md)```
 
 #### Build
 ```bash
@@ -36,10 +36,10 @@ pnpm build
 
 ## 1-Click Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fturbo-eth%template-bank-app&project-name=Places&repository-name=places&demo-title=Places&env=NEXT_PUBLIC_PROVIDER_PUBLIC&envDescription=How%20to%20get%20these%20env%20variables%3A&envLink=https%3A%2F%2Fgithub.com%2Fturbo-eth%template-bank-app%2Fblob%2Fmain%packages%2Fplaces-app%2F.env.example)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fturbo-eth%template-bank-app&project-name=Bank&repository-name=Bank&demo-title=Bank&env=NEXT_PUBLIC_PROVIDER_PUBLIC&envDescription=How%20to%20get%20these%20env%20variables%3A&envLink=https%3A%2F%2Fgithub.com%2Fturbo-eth%template-bank-app%2Fblob%2Fmain%packages%2FBank-app%2F.env.example)
 
 ### Configuration
-Since Places is a TurboRepo application we have to manually set the deployment configuration.
+Since Bank is a TurboRepo application we have to manually set the deployment configuration.
 
 #### Build & Development Settings
 - Build Command - `pnpm build`
@@ -47,7 +47,7 @@ Since Places is a TurboRepo application we have to manually set the deployment c
 - Install Command - `pnpm install`
 
 #### Root Directory
-- `packages/places-app`
+- `packages/web-app`
 - ☑️ Include source files outside of the Root Directory in the Build Step
 
 #### Environment Variables
@@ -64,45 +64,20 @@ NEXT_PUBLIC_ALCHEMY_API_KEYs=
 NEXT_PUBLIC_INFURA_API_KEY=
 ```
 
-
 [Click here for an image preview of the configration](https://user-images.githubusercontent.com/3408362/231420316-ee406a1c-ba4c-46b5-a7d7-571c390956c5.png)
 
 ## Architecture
 
-Places is built using Turborepo - an incremental bundler and build system optimized for JavaScript and TypeScript
-
-#### Packages
-- [Application](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-app) - `app/places-app`
-- [Smart Contracts](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-sol) - `app/places-sol`
-
-#### Pages
-
-- [Home](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-app/app/(general)/page.tsx) - `places-app/app/(general)/page.tsx`
-- [Create](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-app/app/(general)/create/page.tsx) - `places-app/app/(general)/create/page.tsx`
-
-#### Components
-
-- [ButtonPlaceFactoryDeploy](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-app/components/places-factory-deploy.tsx) - `places-app/components/places-factory-deploy.tsx`
-- [ButtonPlaceMint](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-app/components/button-place-mint.tsx) - `places-app/components/button-place-mint.tsx`
-- [CardMintCollectable](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-app/components/card-mint-collectable.tsx) - `places-app/components/`
-
-- [PlacesFactoryWriteCreatePlace](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-app/components/places-factory-write-create-place.tsx) - `places-app/components/places-factory-write-create-place.tsx`
-- [PlaceFactoryEventPlaceCreated](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-app/components/places-factory-event-place-created.tsx) - `places-app/components/places-factory-event-place-created.tsx`
-
-#### Smart Contracts
-
-- [Place](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-sol/contracts/Place.sol) - `places-sol/contracts/Place.sol`
-- [PlaceFactory](https://github.com/turbo-eth/template-bank-app/blob/main/packages/places-sol/contracts/PlaceFactory.sol) - `places-sol/contracts/PlaceFactory.sol`
+Bank is built using Turborepo - an incremental bundler and build system optimized for JavaScript and TypeScript
 
 # How It's Built
-Places, the TurboETH template, uses a modern Typescript development stack.
+Bank, the TurboETH template, uses a modern Typescript development stack.
 
 ### Web3 Core
 - [Solbase](https://github.com/Sol-DAO/solbase) - Modern, opinionated, and gas optimized base for smart contract development.
 - [TurboETH](https://github.com/turbo-eth/template-web3-app) - Web3 Application Template
 - [WAGMI CLI](https://wagmi.sh/cli/getting-started) - Automatic React Hook Generation
 - [RainbowKit](https://www.rainbowkit.com/) - Wallet connection manager
-- [Sign-In With Ethereum](https://login.xyz/) - Account authentication
 
 ### Web2 Frameworks
 - [TurboRepo](https://www.turboeth.xyz) - Turborepo is an incremental bundler and build system
