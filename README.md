@@ -1,10 +1,23 @@
 
 # 🏦 Bank - Web3 Savings Network Template
 
-Bank uses the [TurboETH](https://github.com/turbo-eth/template-web3-app) and [Solbase](https://github.com/Sol-DAO/solbase) for a simple and gas optimized digital collectable application you can spin up minutes.
+Banks is a template for the upcoming PoolTogether V5 hyperstructure.
+
+The template will include support for depositing and withdrawing into prize pool vaults. Plus allow operators to easily deploy new savings assets/vaults and create custom rewards.
+
+The [Web3 Savings Cards prototype](https://web3savings.network) will also incorporated into the final application template.
 
 ### Examples
 - [bank.turboeth.xyz](bank.turboeth.xyz)
+
+# Status
+
+The template is being actively developed. Right now the focus is the application scaffolding and layout.
+
+- [ ] Scaffolding & Layout
+- [ ] Integrate Smart Contracts
+- [ ] Deploy Testnet Version
+- [ ] Deploy Product Version
 
 # Getting Started
 
