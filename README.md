@@ -71,7 +71,7 @@ The application requires a JSON-RPC provider. The `public` provider can be used 
 NEXT_PUBLIC_PROVIDER_PUBLIC=true
 
 # Alchemy: https://www.alchemy.com
-NEXT_PUBLIC_ALCHEMY_API_KEYs=
+NEXT_PUBLIC_ALCHEMY_API_KEY=
 
 # Infura: https://www.infura.io
 NEXT_PUBLIC_INFURA_API_KEY=
